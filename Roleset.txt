@@ -1,0 +1,57 @@
+10
+Mordred R
+Assassin R
+Oberon R
+Morgana R
+Merlin B
+Percival B
+Soldier1 B
+Soldier2 B
+Soldier3 B
+Soldier4 B
+----------------------------------------------------------------
+9
+Mordred R
+Assassin R
+Oberon R
+Morgana R
+Merlin B
+Percival B
+Soldier1 B
+Soldier2 B
+Soldier3 B
+----------------------------------------------------------------
+8
+Mordred R
+Assassin R
+Oberon R
+Merlin B
+Percival B
+Soldier1 B
+Soldier2 B
+Soldier3 B
+----------------------------------------------------------------
+7
+Mordred R
+Assassin R
+Oberon R
+Merlin B
+Percival B
+Soldier1 B
+Soldier2 B
+----------------------------------------------------------------
+6
+Mordred R
+Assassin R
+Merlin B
+Percival B
+Soldier1 B
+Soldier2 B
+----------------------------------------------------------------
+5
+Mordred R
+Assassin R
+Merlin B
+Soldier1 B
+Soldier2 B
+----------------------------------------------------------------
