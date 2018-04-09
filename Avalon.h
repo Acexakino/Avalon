@@ -6,23 +6,24 @@
 
 using namespace std;
 
-struct card{
+struct card{							//describe Characters, sides and abilities
 	string charName;
 	char side;
+	string ability;
 };
 
-class Avalon{
-	private:
-		vector<card> role;
-		vector<string> botName;
+class Roleset{
 	public:
+		vector<card> getrole;			//unrandomed role
+		vector<string> name;			//bot names
+		vector<card> randrole;			//randomed role
 		void roleSet(int);
-		void botSet(int);
-		void randRole(int);
-		void showAbility();
+		void botSet(int);				//collect data of AI names then put it on vector<card> getrole
+		void randRole(int);				//random 
+		void showRole();
 };
 
-Avalon Avalon::roleSet(int n){
+void Roleset::roleSet(int n){
 	ifstream role("Roleset.txt");
 	string text;
 	int state = 1;
@@ -41,14 +42,13 @@ Avalon Avalon::roleSet(int n){
 			}
 			card c;
 			char charName[100];
-			sscanf(text.c_str(),"%s,%c",&charName,&c.side);
-			c.charName = role;
-			role.push_back(c);
+			sscanf(text.c_str(),"%s, %c, [%^]:",&charName,&c.side,&c.ability);
+			getrole.push_back(c);
 		}
 	}
 }
 
-Avalon Avalon::botSet(int n){
+void Roleset::botSet(int n){
 	ifstream bot("Botnames.txt");
 	string text;
 	int state = 1;
@@ -65,23 +65,43 @@ Avalon Avalon::botSet(int n){
 				bot.close();
 				break;
 			}
-			string s;
-			char botname[100];
-			sscanf(text.c_str(),"%s",&botname);
-			botname = botName;
-			botName.push_back(s);
+			Roleset r;
+			
+			name.push_back(r);
 		}
 	}
 }
 
-Avalon Avalon::randRole(int n){
-	int k = rand()%n;
-	for(int i=0; i<n; i++){
-		friend botName
+void Roleset::randRole(int m){				//randoming unique number
+	int *value = new int [30];
+	bool check; 							//variable to check or number is already used
+    int n; 									//variable to store the number in
+    for(int i=0; i < m; i++){
+		do{
+    		n = rand()%m;					//check or number is already used:
+    		check = true;
+    		for (int j=0; j<i ;j++){
+        		if (n == value[j]){ 		//if number is already used
+            		check = false; 			//set check to false
+            		break; 					//no need to check the other elements of value[]
+        		}
+			}
+    	}while(!check); 					//loop until new, unique number is found
+		value[i] = n;
 	}
-	
+	for(int i=0; i < m; i++){
+		int j = value[i];
+		randrole[j] = getrole[i];
+	}
+	delete [] value;
 }
 
-Avalon Avalon::showAbility(){
-	
+ostream & operator<<(ostream &os, card &c){
+	return os << 
+}
+
+void Roleset::showRole(){
+	card c;
+	cout << "You are " << randrole[0] << ".\n";
+	cout << "Your ability is: " << c.ability;
 }

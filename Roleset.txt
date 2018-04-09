@@ -1,57 +1,34 @@
-10
-Mordred R
-Assassin R
-Oberon R
-Morgana R
-Merlin B
-Percival B
-Soldier1 B
-Soldier2 B
-Soldier3 B
-Soldier4 B
-----------------------------------------------------------------
-9
-Mordred R
-Assassin R
-Oberon R
-Morgana R
-Merlin B
-Percival B
-Soldier1 B
-Soldier2 B
-Soldier3 B
-----------------------------------------------------------------
 8
-Mordred R
-Assassin R
-Oberon R
-Merlin B
-Percival B
-Soldier1 B
-Soldier2 B
-Soldier3 B
+Mordred, R, Can't be seen by Merlin
+Assassin, R, Find the Merlin at the end when you lose
+Oberon, R, An evil unknown by other minions
+Merlin, B, Known who are Mordred's minions
+Percival, B, Protect Merlin
+Soldier1, B, Protect the village
+Soldier2, B, Protect the village
+Soldier3, B, Protect the village
 ----------------------------------------------------------------
 7
-Mordred R
-Assassin R
-Oberon R
-Merlin B
-Percival B
-Soldier1 B
-Soldier2 B
+Mordred, R, Can't be seen by Merlin
+Assassin, R, Find the Merlin at the end when you lose
+Oberon, R, An evil unknown by other minions
+Merlin, B, Known who are Mordred's minions
+Percival, B, Protect Merlin
+Soldier1, B, Protect the village
+Soldier2, B, Protect the village
 ----------------------------------------------------------------
 6
-Mordred R
-Assassin R
-Merlin B
-Percival B
-Soldier1 B
-Soldier2 B
+Mordred, R, Can't be seen by Merlin
+Assassin, R, Find the Merlin at the end when you lose
+Merlin, B, Known who are Mordred's minions
+Soldier1, B, Protect the village
+Soldier2, B, Protect the village
+Soldier3, B, Protect the village
 ----------------------------------------------------------------
 5
-Mordred R
-Assassin R
-Merlin B
-Soldier1 B
-Soldier2 B
+Mordred, R, Can't be seen by Merlin
+Assassin, R, Find the Merlin at the end when you lose
+Merlin, B, Known who are Mordred's minions
+Soldier1, B, Protect the village
+Soldier2, B, Protect the village
 ----------------------------------------------------------------

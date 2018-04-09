@@ -1,18 +1,23 @@
 #include"Avalon.h"
 
 int main(){
-	srandtime(0);
+	srand(time(0));
 	cout << "-------------------------------------------------------\n";
 	cout << "                       AVALON                          \n";
 	cout << "-------------------------------------------------------\n";
 	
 	while(true){
+		string nimi;
 		int mode;
-		cout << "Select mode (5-10 player?): ";
+		cout << "Player Name : ";
+		getline(cin,nimi);
+		name.push_back(nimi);
+		
+		cout << "Select mode (5-8 player?): ";
 		cin >> mode;
-		if(mode < 5 && mode > 10){
+		if(mode < 5 && mode > 8){
 			cout << "Invalid Input\n";
-			cout << "Select mode (5-10 player?): ";
+			cout << "Select mode (5-8 player?): ";
 			cin >> mode;
 		}else{
 			break;
@@ -21,8 +26,8 @@ int main(){
 	
 	botSet(mode);
 	roleSet(mode);
-	randRole();
-	showAbility();
+	randRole(mode);
+	showRole();
 	
 	return 0;
 }
