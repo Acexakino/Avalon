@@ -55,19 +55,17 @@ void Roleset::botSet(int n){
 	while(getline(bot,text)){
 		if(state == 1){
 			int i = atoi(text.c_str());
-			if(i == n){
+			if(i == n){						//check number of players that user has input.
 				state == 2;
 			}else{
 				continue;
 			}
-		}else if(state == 2){
+		}else if(state == 2){				//get bot names until if-statement below.
 			if(text == "---------------------------------------"){
 				bot.close();
 				break;
 			}
-			Roleset r;
-			
-			name.push_back(r);
+			name.push_back(text.c_str());
 		}
 	}
 }
@@ -91,17 +89,15 @@ void Roleset::randRole(int m){				//randoming unique number
 	}
 	for(int i=0; i < m; i++){
 		int j = value[i];
-		randrole[j] = getrole[i];
+		randrole[j] = getrole[i];			//get randomed role
 	}
 	delete [] value;
 }
 
 ostream & operator<<(ostream &os, card &c){
-	return os << 
+	return os << "You are " << c.charName << ".\n" << "Your ability is: " << c.ability << ".\n";
 }
 
 void Roleset::showRole(){
-	card c;
-	cout << "You are " << randrole[0] << ".\n";
-	cout << "Your ability is: " << c.ability;
+	cout << randrole[0];					//show your character and ability
 }
